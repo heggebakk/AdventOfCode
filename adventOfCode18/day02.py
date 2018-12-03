@@ -1,4 +1,4 @@
-with open('day2.txt') as f:
+with open('day02.txt') as f:
     src = f.read().splitlines()
 
 twos = 0
