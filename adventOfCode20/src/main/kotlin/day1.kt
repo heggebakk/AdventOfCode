@@ -10,7 +10,7 @@ fun day1(): MutableList<Int> {
     return day1
 }
 
-fun part1(myFile: List<String>): Int {
+private fun part1(myFile: List<String>): Int {
     for (i in myFile.indices) {
         for (j in i + 1 until myFile.size) {
             if (myFile[i].toInt() + myFile[j].toInt() == 2020) {
@@ -21,7 +21,7 @@ fun part1(myFile: List<String>): Int {
     return 0
 }
 
-fun part2(myFile: List<String>): Int {
+private fun part2(myFile: List<String>): Int {
     for (i in 0..myFile.size - 2) {
         for (j in i + 1 until myFile.size - 1) {
             for (k in j + 1 until myFile.size) {
