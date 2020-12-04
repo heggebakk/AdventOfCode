@@ -34,10 +34,5 @@ private fun part2(myFile: List<String>): Long {
     val tree = part1(myFile, 5, 1)
     val four = part1(myFile, 7, 1)
     val five = part1(myFile, 1, 2)
-    println(one)
-    println(two)
-    println(tree)
-    println(four)
-    println(five)
     return (one * two * tree * four * five)
 }
