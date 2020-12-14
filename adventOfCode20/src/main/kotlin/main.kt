@@ -6,5 +6,6 @@ fun main() {
     println("Day 5: ${day5()}")
     println("Day 6: ${day6()}")
     println("Day 8: ${day8()}")
+    println("Day9: ${day9()}")
 }
 
