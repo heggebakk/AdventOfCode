@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include "solutions/day1.h"
 
 int main() {
-    printf("Hello, World!\n");
+    day1("resources/1.txt");
     return 0;
 }
