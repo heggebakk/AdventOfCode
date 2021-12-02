@@ -13,3 +13,14 @@ void readDepths(const char *file, int *arr) {
     }
     fclose(fileInput);
 }
+
+void readCommands(const char *file, int *depth, char *direction) {
+    FILE *fileInput = fopen(file, "r");
+    if (fileInput == NULL) {
+        perror("Cannot open input file \n");
+        exit(1);
+    }
+    for (int i = 0; i < 1000; ++i) {
+        fscanf(fileInput, "%s %d", &direction[i], &depth[i]);
+    }
+}
